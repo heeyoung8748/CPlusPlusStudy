@@ -1,3 +1,1 @@
-﻿  220411_Review.cpp
-C:\Users\KGA_04\Desktop\Meta220411_HY\220411_Review\220411_Review\220411_Review\220411_Review.cpp(146,15): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  220411_Review.vcxproj -> C:\Users\KGA_04\Desktop\Meta220411_HY\220411_Review\220411_Review\x64\Debug\220411_Review.exe
+﻿  220411_Review.vcxproj -> C:\Metaverse_01\CPlusPlusStudy\220411_Review\220411_Review\x64\Debug\220411_Review.exe

@@ -142,13 +142,94 @@ using namespace std;
 
 int main()
 {
-
+/*
     srand(time(NULL));
     cout << "문제 1. 3에서 7 사이의 랜덤한 숫자: " << (rand() % 5) + 3 << endl;
     cout << "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ" << endl;
     
     int max_num, min_mum;
     
+    */
+
+    srand(time(NULL));
+    cout << "문제 1. 3에서 7 사이의 랜덤한 숫자: " << (rand() % 5) + 3 << endl;
+    cout << "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ" << endl;
+
+    int max_num, min_num;
+
+    cout << "가장 큰 값을 적어라" << endl;
+    cin >> max_num;
+    cout << "가장 작은 값" << endl;
+    cin >> min_num;
+    cout << "문제 2. 두 값 사이의 랜덤한 숫자: " << (rand() % (max_num - min_num) + min_num) << endl;
+    cout << "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ" << endl;
+
+
+
+    //문제 3. 
+
+    int answer;
+
+    cout << "문제 3. 1에서 9까지의 숫자 중 임의의 숫자를 하나 입력해주세요." << endl;
+    srand(time(NULL));
+    cin >> answer;
+    ((rand() % 10) + 1 == answer) ? cout << "true!" : cout << "false!!" << endl;
+    cout << "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ" << endl;
+
+    //숙제
+
+    cout << "rand() 함수의 데이터크기는" << sizeof(rand()) << "Byte" << endl;
+
+
+    /*
+ 실습 1.
+       3 ~ 7 사이의 랜덤한 숫자를 출력하는 프로그램을 작성하자. (3, 7 포함)
+ 실습 2.
+       가장 작은 값과 큰 값을 입력 받아서, 그 사이의 임의의 값을 출력하는 프로그램을 작성하자.
+
+ 실습 3.
+       프로그램을 실행하면 내부적으로 1~10 사이의 숫자가 정답으로 정해진다.
+       유저가 1 ~ 9(1, 9 포함) 사이의 숫자를 입력하면 맞으면 true, 틀리면 false를 출력한다.
+*/
+
+#include <iostream>
+#include <string>
+    using namespace std;
+/*
+    int main()
+    {
+
+        srand(time(NULL));
+        cout << "문제 1. 3에서 7 사이의 랜덤한 숫자: " << (rand() % 5) + 3 << endl;
+        cout << "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ" << endl;
+
+        int max_num, min_num;
+
+        cout << "가장 큰 값을 적어라" << endl;
+        cin >> max_num;
+        cout << "가장 작은 값" << endl;
+        cin >> min_num;
+        cout << "문제 2. 두 값 사이의 랜덤한 숫자: " << (rand() % (max_num - min_num) + min_num) << endl;
+        cout << "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ" << endl;
+
+
+
+        //문제 3. 
+
+        int answer;
+
+        cout << "문제 3. 1에서 9까지의 숫자 중 임의의 숫자를 하나 입력해주세요." << endl;
+        srand(time(NULL));
+        cin >> answer;
+        ((rand() % 10) + 1 == answer) ? cout << "true!" : cout << "false!!" << endl;
+
+        //숙제
+
+        cout << "rand() 함수의 데이터크기는" << sizeof(rand()) << "Byte" << endl;
+
+        */
+
+    }
 
     /*
     3에서 7 사이의 랜덤한 숫자
@@ -158,7 +239,7 @@ int main()
     
 
     /*
-    srand(time(NULL));
+    srand(time(NULL)); 시간에 따라 값을 랜덤(을빙자해 일정)하게 변화시키는 함수
     //이 프로그램을 언제 실행시켰느냐에 따라서 랜덤 시드값이 바뀐다. 0~32767 사이의 정수값 리턴.
     //계속 숫자가 늘어나네요?
 
@@ -186,7 +267,6 @@ int main()
     std::cout << testString << std::endl;
     */
 
-}
 
 
 
